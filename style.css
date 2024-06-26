@@ -374,6 +374,7 @@
 
 .wrapper .main .container .container-left .box-video .horizontalPost-bottom .horizontalPost-title {
   border: none;
+  text-transform: uppercase;
 }
 
 .wrapper .main .container .container-left .box-video .verticalPost-list .verticalPost-Top .verticalPost-main .indexing-page__link {
@@ -424,6 +425,16 @@
   display: block;
   text-transform: uppercase;
   padding: 10px 0px;
+}
+
+.wrapper .top-view .main .container .container-right .propose-read .propose-read-heading .horizontalPost-title__icon {
+  background: #557dbd;
+  width: 6px;
+  height: 13px;
+  display: block;
+  transform: skew(20deg);
+  display: block;
+  margin-right: 5px;
 }
 
 .wrapper .top-view .main .container .container-right .propose-read .propose-read-body .propose-read-item__content {
@@ -974,7 +985,7 @@
   color: #eaeaea;
 }
 
-.wrapper footer .container .container-center .infor .contact .contact-list .contact-list-item:nth-child(1) .contact-list-item__link .contact-list-item__icon {
+.wrapper footer .container .container-center .infor .contact .contact-list .contact-list-item:first-child .contact-list-item__link .contact-list-item__icon {
   background-image: var(--icon-facebook);
 }
 
@@ -1150,7 +1161,7 @@
     margin-top: 5px;
   }
 
-  .wrapper>.main>.container:nth-child(1)>.container-right {
+  .wrapper>.main>.container:first-child>.container-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 15px;
@@ -1395,10 +1406,6 @@
     padding: 0;
   }
 
-  .wrapper .top-view .main .container .container-right .propose-read {
-    /* padding: 10px 0; */
-  }
-
   .wrapper .top-view .main .container .container-right .propose-read .propose-read-item {
     display: block;
     margin-top: 10px;
@@ -1406,8 +1413,6 @@
 
   .wrapper .top-view .main .container .container-right .propose-read .propose-read-heading {
     padding: 0;
-    padding-left: 18px;
-    margin-bottom: 10px;
   }
 
   .wrapper>.main>.container:nth-child(2)>.container-right {
@@ -1421,10 +1426,19 @@
   .wrapper .main .container .container-right .book-mark-2 .horizontalPost-2 {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
 
   .wrapper .main .container .container-right .book-mark-2 .horizontalPost-body {
     margin-bottom: 0;
+  }
+
+  .wrapper .main .container .container-left .horizontalPost-bottom .horizontalPost-title {
+    padding: 10px 17px;
+  }
+
+  .wrapper .main .container .container-left .box-video .horizontalPost-bottom .horizontalPost-title {
+    padding: 10px 15px;
   }
 
   .wrapper .main .container {
@@ -1432,13 +1446,13 @@
     padding: 20px 15px;
   }
 
-  .wrapper .main .container:nth-child(3) {
+  .wrapper .main .container:last-child {
     display: block;
     padding: 20px 0;
   }
 
-  .wrapper .main .container:nth-child(3) .container-right,
-  .wrapper .main .container:nth-child(3) .container-left .horizontalPost-list {
+  .wrapper .main .container:last-child .container-right,
+  .wrapper .main .container:last-child .container-left .horizontalPost-list {
     padding: 0 15px;
     margin: 0;
     padding-bottom: 20px;
@@ -1448,8 +1462,20 @@
     margin-top: 20px;
   }
 
-  .wrapper .main .container:nth-child(3) .container-left {
+  .wrapper .main .container:last-child .container-left {
     padding: 0;
+  }
+
+  .wrapper .main .container:first-child {
+    padding: 0;
+  }
+
+  .wrapper .main .container:first-child .horizontalPost-list-wrapper {
+    padding: 0 15px;
+  }
+
+  .wrapper .main .container:first-child .container-right {
+    padding: 0 15px;
   }
 
   .wrapper .main .container .container-left {
@@ -1534,9 +1560,9 @@
   .wrapper footer .container .container-top .searchbox .searchbox__btn {
     width: 30%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 4px 3px 3px 4px;
     border: none;
-    border-left: 1px solid var(--border-color-1);
+    border-left: 1px solid var(--border-color-2);
     background-color: var(--text-color-2);
     color: #fff;
     font-size: 12px;
@@ -1570,7 +1596,7 @@
     margin-bottom: 50px;
   }
 
-  .wrapper footer .container .container-center .index-page .page-list:nth-child(1) {
+  .wrapper footer .container .container-center .index-page .page-list:first-child {
     display: none;
   }
 
