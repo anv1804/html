@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "start": "sass src/scss:public",
+    "sass": "sass --watch src/scss/main.scss:public/styles/main.css"
+  },
   "dependencies": {
     "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6"
   }
 }
